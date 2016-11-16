@@ -1,0 +1,80 @@
+2016-11-08 14:08:40 INFO [main] b.Application [StartupInfoLogger.java:48] Starting Application on WinterNow with PID 22212 (/home/tacho/Documents/workspace_spring/boots/target/classes started by tacho in /home/tacho/Documents/workspace_spring/boots)
+2016-11-08 14:08:40 INFO [main] b.Application [SpringApplication.java:661] No active profile set, falling back to default profiles: default
+2016-11-08 14:08:41 INFO [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java:581] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3349e9bb: startup date [Tue Nov 08 14:08:41 CST 2016]; root of context hierarchy
+2016-11-08 14:08:45 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:155] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-11-08 14:08:45 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:328] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$721acb50] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-08 14:08:45 WARN [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java:549] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jettyEmbeddedServletContainerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/EmbeddedServletContainerAutoConfiguration$EmbeddedJetty.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.web.HttpEncodingAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'spring.http.encoding-org.springframework.boot.autoconfigure.web.HttpEncodingProperties': Initialization of bean failed; nested exception is javax.validation.ValidationException: Unable to create a Configuration, because no Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2016-11-08 14:08:45 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter [LoggingFailureAnalysisReporter.java:42] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Bean Validation API is on the classpath but no implementation could be found
+
+Action:
+
+Add an implementation, such as Hibernate Validator, to the classpath
+
+2016-11-08 14:12:12 INFO [main] b.Application [StartupInfoLogger.java:48] Starting Application on WinterNow with PID 22886 (/home/tacho/Documents/workspace_spring/boots/target/classes started by tacho in /home/tacho/Documents/workspace_spring/boots)
+2016-11-08 14:12:12 INFO [main] b.Application [SpringApplication.java:661] No active profile set, falling back to default profiles: default
+2016-11-08 14:12:12 INFO [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java:581] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3349e9bb: startup date [Tue Nov 08 14:12:12 CST 2016]; root of context hierarchy
+2016-11-08 14:12:14 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:155] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-11-08 14:12:14 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:328] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9031fa55] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-08 14:12:15 WARN [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java:549] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jettyEmbeddedServletContainerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/EmbeddedServletContainerAutoConfiguration$EmbeddedJetty.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.web.HttpEncodingAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'spring.http.encoding-org.springframework.boot.autoconfigure.web.HttpEncodingProperties': Initialization of bean failed; nested exception is javax.validation.ValidationException: Unable to create a Configuration, because no Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2016-11-08 14:12:15 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter [LoggingFailureAnalysisReporter.java:42] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Bean Validation API is on the classpath but no implementation could be found
+
+Action:
+
+Add an implementation, such as Hibernate Validator, to the classpath
+
+2016-11-08 14:15:11 INFO [main] b.Application [StartupInfoLogger.java:48] Starting Application on WinterNow with PID 23458 (/home/tacho/Documents/workspace_spring/boots/target/classes started by tacho in /home/tacho/Documents/workspace_spring/boots)
+2016-11-08 14:15:11 INFO [main] b.Application [SpringApplication.java:661] No active profile set, falling back to default profiles: default
+2016-11-08 14:15:11 INFO [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java:581] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3349e9bb: startup date [Tue Nov 08 14:15:11 CST 2016]; root of context hierarchy
+2016-11-08 14:15:14 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:155] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-11-08 14:15:14 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:328] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9031fa55] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-08 14:15:14 WARN [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java:549] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jettyEmbeddedServletContainerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/EmbeddedServletContainerAutoConfiguration$EmbeddedJetty.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.web.HttpEncodingAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'spring.http.encoding-org.springframework.boot.autoconfigure.web.HttpEncodingProperties': Initialization of bean failed; nested exception is javax.validation.ValidationException: Unable to create a Configuration, because no Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2016-11-08 14:15:14 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter [LoggingFailureAnalysisReporter.java:42] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Bean Validation API is on the classpath but no implementation could be found
+
+Action:
+
+Add an implementation, such as Hibernate Validator, to the classpath
+
+2016-11-08 14:51:32 INFO [main] b.Application [StartupInfoLogger.java:48] Starting Application on WinterNow with PID 25382 (/home/tacho/Documents/workspace_spring/boots/target/classes started by tacho in /home/tacho/Documents/workspace_spring/boots)
+2016-11-08 14:51:32 INFO [main] b.Application [SpringApplication.java:661] No active profile set, falling back to default profiles: default
+2016-11-08 14:51:33 INFO [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java:581] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3349e9bb: startup date [Tue Nov 08 14:51:33 CST 2016]; root of context hierarchy
+2016-11-08 14:51:37 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:155] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-11-08 14:51:37 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:328] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$721acb50] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-08 14:51:37 WARN [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java:549] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jettyEmbeddedServletContainerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/EmbeddedServletContainerAutoConfiguration$EmbeddedJetty.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.web.HttpEncodingAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'spring.http.encoding-org.springframework.boot.autoconfigure.web.HttpEncodingProperties': Initialization of bean failed; nested exception is javax.validation.ValidationException: Unable to create a Configuration, because no Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2016-11-08 14:51:37 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter [LoggingFailureAnalysisReporter.java:42] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Bean Validation API is on the classpath but no implementation could be found
+
+Action:
+
+Add an implementation, such as Hibernate Validator, to the classpath
+

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 19/10/2016 11:33:55 AM by Hibernate Tools 5.2.0.Beta1 -->
+<hibernate-mapping>
+    <class name="utng.hbernate3.Contacto" table="contacto" schema="public" optimistic-lock="version">
+        <composite-id name="id" class="utng.hbernate3.ContactoId">
+            <key-property name="idCliente" type="int">
+                <column name="id_cliente" />
+            </key-property>
+            <key-property name="idContacto" type="int">
+                <column name="id_contacto" />
+            </key-property>
+        </composite-id>
+        <many-to-one name="cliente" class="utng.hbernate3.Cliente" update="false" insert="false" fetch="select">
+            <column name="id_cliente" not-null="true" />
+        </many-to-one>
+        <many-to-one name="tipoContacto" class="utng.hbernate3.TipoContacto" fetch="select">
+            <column name="id_tipo_contacto" />
+        </many-to-one>
+        <property name="datoContacto" type="string">
+            <column name="dato_contacto" length="200" />
+        </property>
+    </class>
+</hibernate-mapping>

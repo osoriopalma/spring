@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 18/10/2016 01:39:10 PM by Hibernate Tools 5.2.0.Beta1 -->
+<hibernate-mapping>
+    <class name="utng.hibernate.Modulo" table="modulo" schema="public" optimistic-lock="version">
+        <id name="idModulo" type="long">
+            <column name="id_modulo" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombre" type="string">
+            <column name="nombre" length="100" />
+        </property>
+        <property name="ruta" type="string">
+            <column name="ruta" length="150" />
+        </property>
+    </class>
+</hibernate-mapping>

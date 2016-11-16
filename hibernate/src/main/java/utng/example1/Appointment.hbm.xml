@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 11/10/2016 10:53:42 AM by Hibernate Tools 5.2.0.Beta1 -->
+<hibernate-mapping>
+    <class name="utng.example1.Appointment" table="appointment" schema="public" optimistic-lock="version">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="affiliate" class="utng.example1.Affiliate" fetch="select">
+            <column name="affiliate_id" />
+        </many-to-one>
+        <many-to-one name="doctor" class="utng.example1.Doctor" fetch="select">
+            <column name="doctor_id" />
+        </many-to-one>
+        <property name="dateAndTime" type="timestamp">
+            <column name="date_and_time" length="29" />
+        </property>
+        <property name="service" type="string">
+            <column name="service" length="200" />
+        </property>
+    </class>
+</hibernate-mapping>

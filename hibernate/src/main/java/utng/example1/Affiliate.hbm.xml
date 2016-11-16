@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 11/10/2016 10:53:42 AM by Hibernate Tools 5.2.0.Beta1 -->
+<hibernate-mapping>
+    <class name="utng.example1.Affiliate" table="affiliate" schema="public" optimistic-lock="version">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="medicalCenter" class="utng.example1.MedicalCenter" fetch="select">
+            <column name="medical_center_id" />
+        </many-to-one>
+        <property name="password" type="string">
+            <column name="password" length="30" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" length="30" />
+        </property>
+        <property name="address" type="string">
+            <column name="address" length="150" />
+        </property>
+        <property name="gender" type="java.lang.Character">
+            <column name="gender" length="1" />
+        </property>
+        <set name="appointments" table="appointment" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="affiliate_id" />
+            </key>
+            <one-to-many class="utng.example1.Appointment" />
+        </set>
+        <set name="issues" table="issue" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="affiliate_id" />
+            </key>
+            <one-to-many class="utng.example1.Issue" />
+        </set>
+    </class>
+</hibernate-mapping>

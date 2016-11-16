@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory name="">
+  <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+  <property name="hibernate.connection.password">mexico</property>
+  <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/tienda</property>
+  <property name="hibernate.connection.username">postgres</property>
+  <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+  <property name="show_sql">true</property>
+  
+  <mapping resource="utng/hibernate2/Categoria.hbm.xml"/>
+  <mapping resource="utng/hibernate2/Cliente.hbm.xml"/>
+  <mapping resource="utng/hibernate2/Contacto.hbm.xml"/>
+  <mapping resource="utng/hibernate2/Facturacion.hbm.xml"/>
+  <mapping resource="utng/hibernate2/Producto.hbm.xml"/>
+  <mapping resource="utng/hibernate2/TipoContacto.hbm.xml"/>
+  <mapping resource="utng/hibernate2/Venta.hbm.xml"/>
+  <mapping resource="utng/hibernate2/VentaDetalle.hbm.xml"/>
+ 
+ </session-factory>
+</hibernate-configuration>

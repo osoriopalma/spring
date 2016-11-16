@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 19/10/2016 11:33:55 AM by Hibernate Tools 5.2.0.Beta1 -->
+<hibernate-mapping>
+    <class name="utng.hbernate3.Cliente" table="cliente" schema="public" optimistic-lock="version">
+        <id name="idCliente" type="int">
+            <column name="id_cliente" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombre" type="string">
+            <column name="nombre" length="20" />
+        </property>
+        <property name="primerApellido" type="string">
+            <column name="primer_apellido" length="20" />
+        </property>
+        <property name="segundoApellido" type="string">
+            <column name="segundo_apellido" length="20" />
+        </property>
+        <one-to-one name="facturacion" class="utng.hbernate3.Facturacion"></one-to-one>
+        <set name="ventas" table="venta" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="id_cliente" />
+            </key>
+            <one-to-many class="utng.hbernate3.Venta" />
+        </set>
+        <set name="contactos" table="contacto" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="id_cliente" not-null="true" />
+            </key>
+            <one-to-many class="utng.hbernate3.Contacto" />
+        </set>
+    </class>
+</hibernate-mapping>

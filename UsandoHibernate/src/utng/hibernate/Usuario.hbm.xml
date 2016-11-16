@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 18/10/2016 01:39:10 PM by Hibernate Tools 5.2.0.Beta1 -->
+<hibernate-mapping>
+    <class name="utng.hibernate.Usuario" table="usuario" schema="public" optimistic-lock="version">
+        <id name="idUsuario" type="long">
+            <column name="id_usuario" />
+            <generator class="assigned" />
+        </id>
+        <property name="contrasenia" type="string">
+            <column name="contrasenia" length="40" />
+        </property>
+        <property name="nombreUsuario" type="string">
+            <column name="nombre_usuario" length="10" />
+        </property>
+        <property name="idRol" type="java.lang.Long">
+            <column name="id_rol" />
+        </property>
+    </class>
+</hibernate-mapping>

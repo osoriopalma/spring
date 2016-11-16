@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 11/10/2016 10:53:42 AM by Hibernate Tools 5.2.0.Beta1 -->
+<hibernate-mapping>
+    <class name="utng.example1.MedicalCenter" table="medical_center" schema="public" optimistic-lock="version">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property name="address" type="string">
+            <column name="address" length="100" />
+        </property>
+        <property name="description" type="string">
+            <column name="description" length="200" />
+        </property>
+        <set name="doctors" table="doctor" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="medical_center_id" />
+            </key>
+            <one-to-many class="utng.example1.Doctor" />
+        </set>
+        <set name="affiliates" table="affiliate" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="medical_center_id" />
+            </key>
+            <one-to-many class="utng.example1.Affiliate" />
+        </set>
+    </class>
+</hibernate-mapping>

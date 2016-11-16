@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="target/classes" path="src/main/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/junit-3.8.1.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="junit"/>
+			<attribute name="maven.artifactId" value="junit"/>
+			<attribute name="maven.version" value="3.8.1"/>
+			<attribute name="maven.scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/hibernate-core-5.2.3.Final.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="org.hibernate"/>
+			<attribute name="maven.artifactId" value="hibernate-core"/>
+			<attribute name="maven.version" value="5.2.3.Final"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/jboss-logging-3.3.0.Final.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="org.jboss.logging"/>
+			<attribute name="maven.artifactId" value="jboss-logging"/>
+			<attribute name="maven.version" value="3.3.0.Final"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/hibernate-jpa-2.1-api-1.0.0.Final.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="org.hibernate.javax.persistence"/>
+			<attribute name="maven.artifactId" value="hibernate-jpa-2.1-api"/>
+			<attribute name="maven.version" value="1.0.0.Final"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/javassist-3.20.0-GA.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="org.javassist"/>
+			<attribute name="maven.artifactId" value="javassist"/>
+			<attribute name="maven.version" value="3.20.0-GA"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/antlr-2.7.7.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="antlr"/>
+			<attribute name="maven.artifactId" value="antlr"/>
+			<attribute name="maven.version" value="2.7.7"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/geronimo-jta_1.1_spec-1.1.1.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="org.apache.geronimo.specs"/>
+			<attribute name="maven.artifactId" value="geronimo-jta_1.1_spec"/>
+			<attribute name="maven.version" value="1.1.1"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/jandex-2.0.0.Final.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="org.jboss"/>
+			<attribute name="maven.artifactId" value="jandex"/>
+			<attribute name="maven.version" value="2.0.0.Final"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/classmate-1.3.0.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="com.fasterxml"/>
+			<attribute name="maven.artifactId" value="classmate"/>
+			<attribute name="maven.version" value="1.3.0"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/dom4j-1.6.1.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="dom4j"/>
+			<attribute name="maven.artifactId" value="dom4j"/>
+			<attribute name="maven.version" value="1.6.1"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/hibernate-commons-annotations-5.0.1.Final.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="org.hibernate.common"/>
+			<attribute name="maven.artifactId" value="hibernate-commons-annotations"/>
+			<attribute name="maven.version" value="5.0.1.Final"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/cdi-api-1.1.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="javax.enterprise"/>
+			<attribute name="maven.artifactId" value="cdi-api"/>
+			<attribute name="maven.version" value="1.1"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/el-api-2.2.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="javax.el"/>
+			<attribute name="maven.artifactId" value="el-api"/>
+			<attribute name="maven.version" value="2.2"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/jboss-interceptors-api_1.1_spec-1.0.0.Beta1.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="org.jboss.spec.javax.interceptor"/>
+			<attribute name="maven.artifactId" value="jboss-interceptors-api_1.1_spec"/>
+			<attribute name="maven.version" value="1.0.0.Beta1"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/jsr250-api-1.0.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="javax.annotation"/>
+			<attribute name="maven.artifactId" value="jsr250-api"/>
+			<attribute name="maven.version" value="1.0"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/javax.inject-1.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="javax.inject"/>
+			<attribute name="maven.artifactId" value="javax.inject"/>
+			<attribute name="maven.version" value="1"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/postgresql-9.4.1211.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="org.postgresql"/>
+			<attribute name="maven.artifactId" value="postgresql"/>
+			<attribute name="maven.version" value="9.4.1211"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>

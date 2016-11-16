@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 19/10/2016 11:33:55 AM by Hibernate Tools 5.2.0.Beta1 -->
+<hibernate-mapping>
+    <class name="utng.hbernate3.Facturacion" table="facturacion" schema="public" optimistic-lock="version">
+        <id name="idCliente" type="int">
+            <column name="id_cliente" />
+            <generator class="foreign">
+                <param name="property">cliente</param>
+            </generator>
+        </id>
+        <one-to-one name="cliente" class="utng.hbernate3.Cliente" constrained="true"></one-to-one>
+        <property name="rfc" type="string">
+            <column name="rfc" length="13" />
+        </property>
+        <property name="domicilio" type="string">
+            <column name="domicilio" length="200" />
+        </property>
+    </class>
+</hibernate-mapping>
